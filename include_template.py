@@ -12,7 +12,11 @@ from sklearn.model_selection import train_test_split, GridSearchCV, StratifiedKF
 from sklearn.linear_model import LinearRegression , Ridge , Lasso, LogisticRegression
 from sklearn.preprocessing import StandardScaler, RobustScaler, QuantileTransformer, OneHotEncoder, FunctionTransformer, PolynomialFeatures
 from sklearn.tree import DecisionTreeRegressor, DecisionTreeClassifier
-from sklearn.ensemble import RandomForestClassifier
+from sklearn.ensemble import RandomForestClassifier,StackingRegressor, StackingClassifier, GradientBoostingRegressor
+from sklearn.neural_network import MLPRegressor, MLPClassifier
+from sklearn.svm import SVR, SVC
+from sklearn.neighbors import KNeighborsRegressor, KNeighborsClassifier
+from sklearn.feature_selection import SelectKBest, f_regression, f_classif, SelectFromModel
 from xgboost import XGBClassifier,XGBRegressor, plot_importance
 from sklearn.metrics import mean_squared_error, r2_score,accuracy_score
 from sklearn.pipeline import Pipeline
